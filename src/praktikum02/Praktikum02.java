@@ -50,19 +50,19 @@ public class Praktikum02 {
         System.out.println("Harga yang harus dibayar: " +k3.hitungHargaBayarKPP());
         
         //dengan constructor
-        Kalkulasi2 K1 = new Kalkulasi2(30);
+        Kalkulasi2 K1 = new Kalkulasi2(30.0);
         K1.jenisKeramik = "A";
         K1.hargaPerbox = 54000;
         K1.jmlhKeramik = 10;
         K1.kalkulasiKeramikPersegi();
         
-        Kalkulasi2 K2 = new Kalkulasi2(40);
+        Kalkulasi2 K2 = new Kalkulasi2(40.0);
         K2.jenisKeramik = "B";
         K2.hargaPerbox = 65000;
         K2.jmlhKeramik = 5;
         K2.kalkulasiKeramikPersegi();
         
-        Kalkulasi2 K3 = new Kalkulasi2(30, 40);
+        Kalkulasi2 K3 = new Kalkulasi2(30.0, 40.0);
         K3.jenisKeramik = "C";
         K3.hargaPerbox = 60000;
         K3.jmlhKeramik = 8;

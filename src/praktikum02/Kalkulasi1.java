@@ -11,51 +11,51 @@ package praktikum02;
  */
 public class Kalkulasi1 {
     //atribut
-    int sisi;
-    int panjang;
-    int lebar;
-    int hargaPerbox;
-    int jmlhKeramik;       
+    double sisi;
+    double panjang;
+    double lebar;
+    double hargaPerbox;
+    double jmlhKeramik;       
     
     //method menghitung luas keramik dalam satuan meter^2
-    int hitungLuasKP(){  //KP -> Keramik Persegi
-        int luasKP;
-        luasKP = this.sisi * this.sisi / 100;
+    double hitungLuasKP(){  //KP -> Keramik Persegi
+        double luasKP;
+        luasKP = this.sisi * this.sisi;
         return luasKP;
     }
     
-    int hitungLuasKPP(){  //KPP -> KEramik Persegi Panjang
-        int luasKPP;
-        luasKPP = this.panjang * this.lebar / 100;
+    double hitungLuasKPP(){  //KPP -> Keramik Persegi Panjang
+        double luasKPP;
+        luasKPP = this.panjang * this.lebar;
         return luasKPP;
     }
     
-    int keperluanKP(){
-        int keperluanKP;
-        keperluanKP = 100 / this.hitungLuasKP(); //100 -> luas tanah
+    double keperluanKP(){
+        double keperluanKP;
+        keperluanKP = 1000000 / this.hitungLuasKP(); //100 -> luas tanah
         return keperluanKP;
     }
     
-    int keperluanKPP(){
-        int keperluanKPP;
+    double keperluanKPP(){
+        double keperluanKPP;
         keperluanKPP = 100 / this.hitungLuasKPP(); //100 -> luas tanah
         return keperluanKPP;
     }
     
-    int hitungHargaSatuan(){
-        int hargaSatuan;
+    double hitungHargaSatuan(){
+        double hargaSatuan;
         hargaSatuan = this.hargaPerbox / this.jmlhKeramik;
         return hargaSatuan;
     }
     
-    int hitungHargaBayarKP(){
-        int hargaBayarKP;
+    double hitungHargaBayarKP(){
+        double hargaBayarKP;
         hargaBayarKP = this.keperluanKP()*this.hitungHargaSatuan();
         return hargaBayarKP;
     }
     
-    int hitungHargaBayarKPP(){
-        int hargaBayarKPP;
+    double hitungHargaBayarKPP(){
+        double hargaBayarKPP;
         hargaBayarKPP = this.keperluanKPP()*this.hitungHargaSatuan();
         return hargaBayarKPP;
     }
